@@ -1,0 +1,105 @@
+
+body {
+	background: hsl(0, 0%, 90%);
+}
+
+.main-area{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; /* Most important for scrolling */
+}
+
+.main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+main.mini-padding {
+  padding: 1rem calc(1rem + 60px);
+}
+
+/* Sample styling */
+.setting-title {
+  margin-bottom: 0;
+  color: rgba(228, 28, 119, 0.8) /*#e41c77cc*/ ;
+}
+
+.setting-note {
+  font-size: 14px;
+  color: #484848;
+  margin: 4px 0;
+}
+
+.igx-nav-drawer__aside::-webkit-scrollbar {
+  width: 3px;
+  background: #e4e4e4;
+}
+
+.igx-nav-drawer__aside::-webkit-scrollbar-thumb {
+  background: #0375be;
+  border-radius: 0;
+}
+
+
+
+.card {
+	background: hsl(0, 0%, 90%);
+  margin: 2em 2em;
+  min-width: 300px;
+}
+
+.card a {
+	color: black;
+	text-decoration: solid;
+}
+
+.card a:hover {
+	box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
+}
+
+.card-content {
+	padding: 1.4em;
+}
+
+.card-content h2 {
+  margin-top: 0;
+  margin-right: .5em;
+	margin-bottom: .5em;
+	font-weight: bold;
+}
+
+.card-content p {
+	font-size: 80%;
+}
+
+.flex{
+  padding: 10px 10px;
+  margin: 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+
+/* Flexbox stuff */
+
+@media screen and (min-width: 40em) {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .card {
+        flex: 0 1 calc(50% - 1em);
+    }
+}
+
+@media screen and (min-width: 60em) {
+
+    .card {
+        flex: 0 1 calc(25% - 1em);
+    }
+}
